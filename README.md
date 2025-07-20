@@ -1,2 +1,12 @@
 # Data-Forge-Solutions.github.io
-Data Forge Solutions web page
+
+This repository contains the static website for **DataForge Solutions**.
+
+Available pages:
+
+- `index.html` – Landing page with an overview of the company
+- `team.html` – Meet the team behind DataForge Solutions
+- `open-source.html` – Information about our open source projects
+- `paid-tools.html` – Placeholder for upcoming commercial tools
+
+The site is designed to be simple and is served via GitHub Pages.
