@@ -10,3 +10,4 @@ Available pages:
 - `paid-tools.html` – Placeholder for upcoming commercial tools
 
 The site is designed to be simple and is served via GitHub Pages.
+
