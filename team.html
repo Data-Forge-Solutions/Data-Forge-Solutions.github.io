@@ -52,6 +52,15 @@
         }
         .member {
             margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        .member img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
         }
         .role {
             color: #666;
@@ -74,14 +83,20 @@
     <main>
         <h2>Meet the Team</h2>
         <div class="member">
-            <h3>Jane Doe</h3>
-            <p class="role">Founder &amp; Lead Developer</p>
-            <p>Jane oversees all technical strategy and open source initiatives.</p>
+            <img src="https://via.placeholder.com/80" alt="Jane Doe">
+            <div>
+                <h3>Jane Doe</h3>
+                <p class="role">Founder &amp; Lead Developer</p>
+                <p>Jane oversees all technical strategy and open source initiatives.</p>
+            </div>
         </div>
         <div class="member">
-            <h3>John Smith</h3>
-            <p class="role">Data Scientist</p>
-            <p>John builds machine learning models and handles data analytics.</p>
+            <img src="https://via.placeholder.com/80" alt="John Smith">
+            <div>
+                <h3>John Smith</h3>
+                <p class="role">Data Scientist</p>
+                <p>John builds machine learning models and handles data analytics.</p>
+            </div>
         </div>
     </main>
 
