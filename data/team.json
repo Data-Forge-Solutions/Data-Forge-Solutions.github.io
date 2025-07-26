@@ -1,0 +1,24 @@
+{
+  "members": [
+    {
+      "name": "Andrew Sims",
+      "role": "Founder & Lead Developer",
+      "avatar": "avatars/andrew.png",
+      "bio": "Andrew oversees all technical strategy and open source initiatives.",
+      "fingerprint": "3FDD E515 3518 5819 B5D6 F0F9 246C 81EB CC9A 5935",
+      "keyFile": "keys/andrew_sims_dataforge_pubkey.asc",
+      "keySearch": "https://keys.openpgp.org/search?q=andrew.sims@dataforgesolutions.com",
+      "github": "https://github.com/Andrewsimsd"
+    },
+    {
+      "name": "Chris Beard",
+      "role": "Lead Developer",
+      "avatar": "avatars/chris.png",
+      "bio": "Chris is a versatile engineer. If you have a problem, he can solve it.",
+      "fingerprint": "BCCA 3E0F EFD0 0E49 98DA 1704 345C 9677 B68F 0E45",
+      "keyFile": "keys/chris_beard_dataforge_pubkey.asc",
+      "keySearch": "https://keys.openpgp.org/search?q=chris.beard@dataforgesolutions.com",
+      "github": "https://github.com/chrisdbeard"
+    }
+  ]
+}

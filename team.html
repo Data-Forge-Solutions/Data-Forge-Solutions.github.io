@@ -1,149 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet the Team - Data Forge Solutions</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <style>
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: #0e2f44;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0 0 0;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        h2 {
-            color: #0e2f44;
-        }
-        h1 {
-            color: #eee;
-            margin-bottom: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #eee;
-            font-size: 0.9rem;
-        }
-        .member {
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-        .member img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .role {
-            color: #666;
-        }
-    </style>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Data Forge Solutions</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/team.html">Meet the Team</a></li>
-                <li><a href="/open-source.html">Open Source</a></li>
-                <li><a href="/paid-tools.html">Paid Tools</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Meet the Team</h2>
-        <div class="member">
-            <img src="avatars/andrew.png" alt="Andrew Sims">
-            <div>
-                <h3>Andrew Sims</h3>
-                <p class="role">Founder &amp; Lead Developer</p>
-                <p>Andrew oversees all technical strategy and open source initiatives.</p>
-                <section id="gpg-key" style="font-family: monospace; background-color: #f4f4f4; padding: 1em; border-radius: 8px; border: 1px solid #ccc; max-width: 700px;">
-                    <h2 style="font-family: sans-serif; color: #0e2f44;">🔐 GPG Public Key</h2>
-                    <p><strong>Fingerprint:</strong><br>
-                        3FDD&nbsp;E515&nbsp;3518&nbsp;5819&nbsp;B5D6&nbsp;F0F9&nbsp;246C&nbsp;81EB&nbsp;CC9A&nbsp;5935
-                    </p>
-                    <p>
-                        📄 <a href="/keys/andrew_sims_dataforge_pubkey.asc" download style="color: #0e2f44; text-decoration: underline;">
-                        Download Public Key (.asc)
-                        </a>
-                    </p>
-                    <p>
-                        📥 This key is also available from:<br>
-                        <a href="https://keys.openpgp.org/search?q=andrew.sims@dataforgesolutions.com" target="_blank" rel="noopener">keys.openpgp.org</a>
-                    </p>
-                    <p style="font-size: 0.9em; color: #555;">
-                        Use this key to verify signed messages and software, or to send encrypted communication securely.
-                    </p>
-                </section>
-                <a href="https://github.com/Andrewsimsd" target="_blank" rel="noopener" aria-label="GitHub Profile" style="text-decoration: none;">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 32px; height: 32px; vertical-align: middle;">
-                </a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-hero">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+                <img src="assets/dfs-removebg.png" alt="DFS Logo" class="navbar-logo">
+                <span>Data Forge Solutions</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/team.html">Meet the Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/open-source.html">Open Source</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paid-tools.html">Paid Tools</a></li>
+                    <li class="nav-item d-flex align-items-center">
+                        <button id="theme-toggle" class="nav-link btn btn-link ms-lg-3" aria-label="Toggle theme">
+                            <i id="theme-icon" class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="member">
-            <img src="avatars/chris.png" alt="Chris Beard">
-            <div>
-                <h3>Chris Beard</h3>
-                <p class="role">Lead Developer</p>
-                <p>Chris is a versatile engineer. If you have a problem, he can solve it.</p>
-                <section id="gpg-key" style="font-family: monospace; background-color: #f4f4f4; padding: 1em; border-radius: 8px; border: 1px solid #ccc; max-width: 700px;">
-                    <h2 style="font-family: sans-serif; color: #0e2f44;">🔐 GPG Public Key</h2>
-                    <p><strong>Fingerprint:</strong><br>
-                        BCCA&nbsp;3E0F&nbsp;EFD0&nbsp;0E49&nbsp;98DA&nbsp;1704&nbsp;345C&nbsp;9677&nbsp;B68F&nbsp;0E45
-                    </p>
-                    <p>
-                        📄 <a href="/keys/chris_beard_dataforge_pubkey.asc" download style="color: #0e2f44; text-decoration: underline;">
-                        Download Public Key (.asc)
-                        </a>
-                    </p>
-                    <p>
-                        📥 This key is also available from:<br>
-                        <a href="https://keys.openpgp.org/search?q=chris.beard@dataforgesolutions.com" target="_blank" rel="noopener">keys.openpgp.org</a>
-                    </p>
-                    <p style="font-size: 0.9em; color: #555;">
-                        Use this key to verify signed messages and software, or to send encrypted communication securely.
-                    </p>
-                </section>
-                <a href="https://github.com/chrisdbeard" target="_blank" rel="noopener" aria-label="GitHub Profile" style="text-decoration: none;">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 32px; height: 32px; vertical-align: middle;">
-                </a>
-            </div>
-        </div>
+    </nav>
+    
+    <main class="container py-4">
+        <h2 class="mb-4 neon-shadow">Meet the Team</h2>
+        <div id="team-container" class="row row-cols-1"></div>
     </main>
 
-    <footer>
-        &copy; 2025 Data Forge Solutions, LLC. All rights reserved.
+    <footer class="bg-body-secondary text-body py-3 text-center">
+        <div class="container">
+            &copy; 2025 Data Forge Solutions, LLC. All rights reserved.
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/load-team.js"></script>
 </body>
 </html>

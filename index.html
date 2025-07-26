@@ -1,104 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Forge Solutions</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: #0e2f44;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0 0 0;
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        h2 {
-            color: #0e2f44;
-        }
-        h1 {
-            color: #eee;
-            margin-bottom: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #eee;
-            font-size: 0.9rem;
-        }
-        .tagline {
-            font-style: italic;
-            color: #aaa;
-            margin-top: 0.5rem;
-        }
-    </style>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Data Forge Solutions</h1>
-        <p class="tagline">Forging data into actionable intelligence</p>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/team.html">Meet the Team</a></li>
-                <li><a href="/open-source.html">Open Source</a></li>
-                <li><a href="/paid-tools.html">Paid Tools</a></li>
-            </ul>
+    <header class="d-flex flex-column text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-hero">
+            <div class="container">
+                <!-- <a class="navbar-brand" href="/">Data Forge Solutions</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/team.html">Meet the Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/open-source.html">Open Source</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/paid-tools.html">Paid Tools</a></li>
+                        <li class="nav-item d-flex align-items-center">
+                            <button id="theme-toggle" class="nav-link btn btn-link ms-lg-3" aria-label="Toggle theme">
+                                <i id="theme-icon" class="bi bi-moon-fill"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <div class="container flex-grow-1 d-flex align-items-center justify-content-center text-center flex-column flex-md-row gap-3">
+            <img src="assets/dfs-removebg.png" alt="DFS Logo" class="logo-img">
+            <div>
+                <h1 class="display-4 fw-bold mb-2 gradient-text">Data Forge Solutions</h1>
+                <h2 class="lead tagline"><i>Forging data into actionable intelligence</i></h2>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>
-                Data Forge Solutions is a technology-driven LLC focused on delivering free, open source software tools and libraries.
-            </p>
+    <div class="section-divider"></div>
+    <br/>
+
+    <main class="container py-4">
+        <section class="container py-5">
+            <h2 class="text-center mb-4 neon-shadow">What We Do</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-code-slash display-5 neon-gradient-icon neon-delay-1"></i>
+                    <h3 class="h3 mt-3 mb-3 neon-gradient-icon neon-delay-1">Custom Development</h3>
+                    <p class="text-body"><i>Tailored software built for your business needs.</i></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-bar-chart-line display-5 neon-gradient-icon neon-delay-3"></i>
+                    <h3 class="h3 mt-3 mb-3 neon-gradient-icon neon-delay-3">Data Visualization</h3>
+                    <p class="text-body"><i>Transform raw data into meaningful insights.</i></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="bi bi-robot display-5 neon-gradient-icon neon-delay-2"></i>
+                    <h3 class="h3 mt-3 mb-3 neon-gradient-icon neon-delay-2">Machine Learning</h3>
+                    <p class="text-body"><i>Integrate AI to boost decision making.</i></p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>What We Do</h2>
-            <ul>
-                <li>Custom software development</li>
-                <li>Data analysis and visualization</li>
-                <li>Machine learning integration</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Open Source Projects</h2>
-            <p>We maintain a number of open source projects. Visit the <a href="/open-source.html">Open Source</a> page to learn more.</p>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email us at <a href="mailto:info@dataforgesolutions.com">info@dataforgesolutions.com</a></p>
+        <section class="py-5 text-center">
+            <div class="container rounded-4 bg-dark-subtle p-5 shadow-lg">
+                <h2 class="mb-3 neon-shadow">Open Source First</h2>
+                <p class="mb-4"><i>We build in the open and welcome collaboration from the community.</i></p>
+                <!-- <a href="/open-source.html" class="btn btn-primary btn-lg">View Projects</a> -->
+                <a href="/open-source.html" class="btn btn-neon btn-lg">View Projects</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        &copy; 2025 DatanForge Solutions, LLC. All rights reserved.
+    <footer class="bg-body-secondary text-body py-3 text-center">
+        <div class="container">
+            &copy; 2025 Data Forge Solutions, LLC. All rights reserved.
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/theme-toggle.js"></script>
 </body>
 </html>
