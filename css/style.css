@@ -23,8 +23,12 @@ body {
 .role {
     color: var(--bs-secondary-color);
 }
-.gpg-key {
-    font-family: monospace;
+.gpg-fingerprint {
+  font-family: monospace;
+  background: rgba(0, 224, 255, 0.05);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
 }
 .navbar {
   min-height: 70px;
