@@ -19,6 +19,16 @@
       "keyFile": "keys/chris_beard_dataforge_pubkey.asc",
       "keySearch": "https://keys.openpgp.org/search?q=chris.beard@dataforgesolutions.com",
       "github": "https://github.com/chrisdbeard"
+    },
+    {
+      "name": "Michael Hudson",
+      "role": "Lead Developer",
+      "avatar": "avatars/michael.png",
+      "bio": "Michael is a Bad Bambino.",
+      "fingerprint": "33BC 4301 09B0 CF4D 1DE8 F01C 0F96 A828 FEB1 5127",
+      "keyFile": "keys/michael_hudson_dataforge_pubkey.asc",
+      "keySearch": "https://keys.openpgp.org/search?q=michael.hudson@dataforgesolutions.com",
+      "github": "https://github.com/michaelhudsonDataForge"
     }
   ]
 }
